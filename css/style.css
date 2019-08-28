@@ -1,0 +1,212 @@
+body{
+	margin-left: 3%;
+	text-align: center;
+}
+
+.container{
+	width: 1100px;
+}
+/*Animation Timing Function*/
+.bb{
+	width: 800px;
+	height: 400px;
+	margin-left: 15%;
+}
+.zz{
+	top:-1000px;
+	font-size: 30px;
+	color: lightblue;
+	padding: 20px;
+	position: relative;
+	animation:bobup 1.8s ease-in-out infinite 0.5s;	
+}
+
+.one{
+	top:-1000px;
+	font-size: 30px;
+	color: #ff616b;
+	padding: 20px;
+	position: relative;
+	animation:bobup 1.8s ease-in-out infinite 0.3s;
+}
+.tow{
+	top:-1000px;
+	font-size: 30px;
+	color:#6bd1cb;
+	padding: 20px;
+	position: relative;
+	animation:bobup 1.8s ease-in-out infinite 0.22s;
+}
+.three{
+	top:-1000px;
+	color:#dbd46e;
+	font-size: 30px;
+	padding: 20px;
+	position: relative;
+	animation:bobup 1.8s ease-in-out infinite 0.25s;
+}
+.four{
+	top:-1000px;
+	font-size: 30px;
+	color:#7acfb8;
+	padding: 20px;
+	position: relative;
+	animation:bobup 1.8s ease-in-out infinite 0.20s;
+}
+.five{
+	top:-1000px;
+	color:#d19fd1;
+	font-size: 30px;
+	padding: 20px;
+	position: relative;
+	animation:bobup 1.8s ease-in-out forwards infinite 0.4s;
+}
+
+@keyframes bobup{
+	0%   {  top:-1000px;}
+  	25%  {  top:300px;}
+  	50%  { top:240px;}
+  	75%  { top:300px;}
+  	100% {  top:0px;}
+}
+
+/*Animation Iteration Count:*/
+.fa-heart{
+	color: #ff616b;
+	font-size: 150px;
+	margin: 10%;
+	animation: heartbeat 3s ease-in-out forwards infinite;
+}
+
+@keyframes heartbeat{
+	10%{ 
+		transform: scale(1);
+		}
+	20%{ 
+		transform: scale(1.5);
+		}
+	30%{ 
+		transform: scale(1.4);
+		}
+	40%{
+		 transform: scale(1.5);
+		}
+	50%{ 
+		transform: scale(1); 
+		}
+	60%{ 
+		transform: scale(1.5);
+		}
+	70%{
+		 transform: scale(1.4);
+		}
+	80%{ 
+		transform: scale(1.5);
+		}
+	90%{ 
+		transform: scale(1);
+		}
+	95%{ 
+		transform: scale(1);
+		}
+	100%{ 
+		transform: scale(1);
+		}		
+}
+
+
+/*bounce Animation*/
+p{
+	color: #78f5ea;
+	font-size: 40px;
+	margin: 10%;
+	animation: bouncein 3s infinite ease-in-out; 
+}
+@keyframes bouncein{
+	0%{
+		transform: scale(0);
+	}
+	25%{
+		transform: scale(1.5);
+	}
+	50%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+
+/*Animation Fill Mode*/
+.stay{
+	background-color: #29e6e2;
+	width: 200px;
+	height: 20px;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	margin-left: 40%;
+}
+
+.back{
+	background-color:#ff7c36;
+	width: 200px;
+	height: 20px;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	margin-left: 40%;
+}
+
+@keyframes big{
+	to{
+		transform: scale(1.5);
+	}
+}
+
+.scale:hover .stay{
+	animation: big 1s ease forwards;
+}
+.scale:hover .back{
+	animation: big 1s ease;
+}
+
+/*Animation Play State*/
+.PlayState h2{
+	margin-top: 10%;
+}
+.clock{
+	clear: both;
+	font-size: 300px;
+	display: inline-block;
+	position: relative;
+	margin-top: 35%;
+	color: #78f5ea;
+}
+
+hr{
+	width: 70px;
+	position: absolute;
+	left: 165px;
+	border: 5px solid #78f5ea;
+	display: inline-block;
+	animation: rotate 1s  linear infinite;
+    transform-origin: .5%;
+}
+
+@keyframes rotate{
+	to{
+		transform:rotate(360deg);
+	}
+}
+
+.clock:hover hr{
+	animation-play-state: paused;
+}
+
+h3{
+	color: #78f5ea;
+	margin-top: -30%;
+	font-size: 30px;
+}
