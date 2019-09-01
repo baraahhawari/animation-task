@@ -1,6 +1,15 @@
-body{
+@font-face{
+  font-family:Rancho-Regular;
+  src:url(../fonts/Rancho/Rancho-Regular.ttf);
+}
+
+body {
+  	font-family:Rancho-Regular;
 	margin-left: 3%;
 	text-align: center;
+	background-color: #000;
+	color: #fff;
+	font-size: 30px;
 }
 
 .container{
@@ -8,74 +17,81 @@ body{
 }
 /*Animation Timing Function*/
 .bb{
+	background-color: #fff;
 	width: 800px;
 	height: 400px;
 	margin-left: 15%;
 }
-.zz{
+.one{
 	top:-1000px;
 	font-size: 30px;
-	color: lightblue;
+	color:#a8e9ed;
 	padding: 20px;
 	position: relative;
-	animation:bobup 1.8s ease-in-out infinite 0.5s;	
+	animation:bobup 2s ease-in-out forwards infinite 0.5s;	
 }
 
-.one{
+.tow{
 	top:-1000px;
 	font-size: 30px;
 	color: #ff616b;
 	padding: 20px;
 	position: relative;
-	animation:bobup 1.8s ease-in-out infinite 0.3s;
-}
-.tow{
-	top:-1000px;
-	font-size: 30px;
-	color:#6bd1cb;
-	padding: 20px;
-	position: relative;
-	animation:bobup 1.8s ease-in-out infinite 0.22s;
+	animation:bobup 2s ease-in-out forwards infinite 0.4s;
 }
 .three{
+	top:-1000px;
+	font-size: 30px;
+	color:#4fd6ff;
+	padding: 20px;
+	position: relative;
+	animation:bobup 2s ease-in-out forwards infinite 0.36s;
+}
+.four{
 	top:-1000px;
 	color:#dbd46e;
 	font-size: 30px;
 	padding: 20px;
 	position: relative;
-	animation:bobup 1.8s ease-in-out infinite 0.25s;
+	animation:bobup 2s ease-in-out forwards infinite 0.46s;
 }
-.four{
+.five{
 	top:-1000px;
 	font-size: 30px;
 	color:#7acfb8;
 	padding: 20px;
 	position: relative;
-	animation:bobup 1.8s ease-in-out infinite 0.20s;
+	animation:bobup 2s ease-in-out forwards infinite 0.44s;
 }
-.five{
+.six{
 	top:-1000px;
 	color:#d19fd1;
 	font-size: 30px;
 	padding: 20px;
 	position: relative;
-	animation:bobup 1.8s ease-in-out forwards infinite 0.4s;
+	animation:bobup 2s ease-in-out forwards infinite 0.32s;
 }
 
 @keyframes bobup{
 	0%   {  top:-1000px;}
-  	25%  {  top:300px;}
-  	50%  { top:240px;}
-  	75%  { top:300px;}
+  	20%  {  top:300px;}
+  	40%  { top:260px;}
+  	80%  { top:300px;}
   	100% {  top:0px;}
 }
 
 /*Animation Iteration Count:*/
+.heart{
+	background-color: #fff;
+	width: 500px;
+	height:200px;
+	padding: 5%;
+	margin: 10% 25%;
+}
 .fa-heart{
 	color: #ff616b;
 	font-size: 150px;
-	margin: 10%;
-	animation: heartbeat 3s ease-in-out forwards infinite;
+	animation: heartbeat 4s ease-in-out forwards infinite;
 }
 
 @keyframes heartbeat{
@@ -83,42 +99,54 @@ body{
 		transform: scale(1);
 		}
 	20%{ 
-		transform: scale(1.5);
-		}
-	30%{ 
 		transform: scale(1.4);
 		}
-	40%{
-		 transform: scale(1.5);
+	25%{ 
+		transform: scale(1.3);
 		}
-	50%{ 
-		transform: scale(1); 
-		}
-	60%{ 
-		transform: scale(1.5);
-		}
-	70%{
+	30%{
 		 transform: scale(1.4);
 		}
+	40%{ 
+		transform: scale(1); 
+		}
+	45%{ 
+		transform: scale(1.4);
+		}
+	50%{
+		 transform: scale(1.3);
+		}
+	55%{ 
+		transform: scale(1.4);
+		}
+	60%{ 
+		transform: scale(1);
+		}
+	70%{ 
+		transform: scale(1);
+		}
 	80%{ 
-		transform: scale(1.5);
+		transform: scale(1);
 		}
 	90%{ 
 		transform: scale(1);
 		}
-	95%{ 
-		transform: scale(1);
-		}
 	100%{ 
 		transform: scale(1);
-		}		
+		}
 }
 
 
 /*bounce Animation*/
-p{
-	color: #78f5ea;
-	font-size: 40px;
+.bounce{
+	background-color: #fff;
+	width: 500px;
+	height:200px;
+	padding: 5%;
+	margin: 10% 25%;
+}
+p{	color: #78f5ea;
+	font-size: 60px;
 	margin: 10%;
 	animation: bouncein 3s infinite ease-in-out; 
 }
@@ -139,24 +167,33 @@ p{
 
 
 /*Animation Fill Mode*/
+.fill-mode{	
+	background-color: #fff;
+	width: 500px;
+	height:400px;
+	padding: 5%;
+	margin: 10% 25%;
+	color: #000;
+}
+
 .stay{
 	background-color: #29e6e2;
-	width: 200px;
+	width: 300px;
 	height: 20px;
-	padding: 20px;
+	padding: 30px;
 	border-radius: 10px;
 	text-align: center;
-	margin-left: 40%;
+	margin-left: 15%;
 }
 
 .back{
 	background-color:#ff7c36;
-	width: 200px;
+	width: 300px;
 	height: 20px;
-	padding: 20px;
+	padding: 30px;
 	border-radius: 10px;
 	text-align: center;
-	margin-left: 40%;
+	margin-left: 15%;
 }
 
 @keyframes big{
@@ -173,22 +210,26 @@ p{
 }
 
 /*Animation Play State*/
-.PlayState h2{
-	margin-top: 10%;
+.play{
+	background-color: #fff;
+	width: 500px;
+	height:300px;
+	padding: 5%;
+	margin: 10% 25%;
 }
+
 .clock{
 	clear: both;
 	font-size: 300px;
 	display: inline-block;
 	position: relative;
-	margin-top: 35%;
 	color: #78f5ea;
 }
 
 hr{
 	width: 70px;
 	position: absolute;
-	left: 165px;
+	left: 150px;
 	border: 5px solid #78f5ea;
 	display: inline-block;
 	animation: rotate 1s  linear infinite;
@@ -207,6 +248,6 @@ hr{
 
 h3{
 	color: #78f5ea;
-	margin-top: -30%;
+	margin-top: -0.5%;
 	font-size: 30px;
 }
