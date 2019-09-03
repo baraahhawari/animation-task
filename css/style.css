@@ -91,7 +91,7 @@ body {
 .fa-heart{
 	color: #ff616b;
 	font-size: 150px;
-	animation: heartbeat 4s ease-in-out forwards infinite;
+	animation: heartbeat 4s ease-in-out infinite;
 }
 
 @keyframes heartbeat{
