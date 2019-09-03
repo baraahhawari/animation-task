@@ -7,7 +7,7 @@ body {
   	font-family:Rancho-Regular;
 	margin-left: 3%;
 	text-align: center;
-	background-color: #000;
+	background: linear-gradient(to bottom, #33ccff, #ff99cc, #33ccff, #ff99cc);
 	color: #fff;
 	font-size: 30px;
 }
